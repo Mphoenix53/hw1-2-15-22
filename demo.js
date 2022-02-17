@@ -32,7 +32,7 @@ for(let a =0; a<=10;a++){
 // 5. Look closely at the code below
 
 const isOdd = (num) =>{
-    return num % 2 === 0
+    return num % 2 === 1
 }
 
 if(isOdd(2)){
@@ -42,11 +42,11 @@ if(isOdd(2)){
 }
 
 // 6. what will this log?
-is Odd
+true
 // 7. what is the value of isOdd(2) 
-odd
+even
 // 8. Fix the isOdd function to make this work
-
+change the 0 to a 1
 // Functions
 // 1. Write a function that takes a positive number and prints all even numbers from 0 – number
 for (var i=0; i<=50; i++){ 
@@ -61,7 +61,8 @@ for (let i = 0; i < num.length; i++) {
 }
 console.log(sum);
 // 3. Write a function that returns the number of vowels in string
-getCount('michaelphoenix')
+
+
 function getCount(str) {
   var vowelsCount = 0
   const vowels = ['a','e','i','o','u']
@@ -72,6 +73,8 @@ function getCount(str) {
   }
   console.log(vowelsCount)
 }
+getCount('michaelphoenix')
+
 // 4. Write a function that takes a math operator, as a string, ('*','/','+','-') and two numbers and returns the result
 // 5. Write a function that takes an array of strings and a string and returns true or false if the string is in the array.
 // 6. write a function that takes a person object {firstname: 'joe', lastname: 'shmoe', age: 50} and returns a formatted string "joe shmoe is 50 years old"
