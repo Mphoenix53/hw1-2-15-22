@@ -76,8 +76,24 @@ function getCount(str) {
 getCount('michaelphoenix')
 
 // 4. Write a function that takes a math operator, as a string, ('*','/','+','-') and two numbers and returns the result
+function CALCULATOR(x, y, z) {
+  if (y == '+') {
+    console.log(x + z);
+  } else  { (y == '-')
+    console.log(x - z);
+  } else { (y == '*')
+    console.log(x * z);
+  } else  { (y == '/')  
+    console.log(x / z);
+}   
+}
+
+CALCULATOR(3, '/', 3);
+
 // 5. Write a function that takes an array of strings and a string and returns true or false if the string is in the array.
-// 6. write a function that takes a person object {firstname: 'joe', lastname: 'shmoe', age: 50} and returns a formatted string "joe shmoe is 50 years old"
+const word = ['hi', 'to', 'by', 'it'];
+console.log(word.includes('is'));
+// 6. "write a function that takes a person object {firstname: 'joe', lastname: 'shmoe', age: 50} and returns a formatted string "joe shmoe is 50 years old
 
 // 7. write a function that takes an array that removes the first and last items and return that new array
 let array =[1,2,3,4]

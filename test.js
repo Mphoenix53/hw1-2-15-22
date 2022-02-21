@@ -1,37 +1,7 @@
-const characters = [
-  {
-      name: 'Luke Skywalker',
-      height: 172,
-      mass: 77,
-      eye_color: 'blue',
-      gender: 'male',
-  },
-  {
-      name: 'Darth Vader',
-      height: 202,
-      mass: 136,
-      eye_color: 'yellow',
-      gender: 'male',
-  },
-  {
-      name: 'Leia Organa',
-      height: 150,
-      mass: 49,
-      eye_color: 'brown',
-      gender: 'female',
-  },
-  {
-      name: 'Anakin Skywalker',
-      height: 188,
-      mass: 84,
-      eye_color: 'blue',
-      gender: 'male',
-  },
-];
 
-//***SOME***
-//3. Is there at least one character taller than 210?
-let x = characters.some((c)=>{
-  return c.mass >= 150;
-});
-console.log(x) 
+// 5. Write a function that takes an array of strings 
+// and a string and returns true or false if the string 
+// is in the array.
+const word = ['hi', 'to', 'by', 'it'];
+console.log(word.includes('is'));
+  
