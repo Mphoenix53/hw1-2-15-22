@@ -76,25 +76,30 @@ function getCount(str) {
 getCount('michaelphoenix')
 
 // 4. Write a function that takes a math operator, as a string, ('*','/','+','-') and two numbers and returns the result
-function CALCULATOR(x, y, z) {
-  if (y == '+') {
-    console.log(x + z);
-  } else  { (y == '-')
-    console.log(x - z);
-  } else { (y == '*')
-    console.log(x * z);
-  } else  { (y == '/')  
-    console.log(x / z);
+const CALCULATOR = (x, y, z) => {
+  if (y === '+'){
+    return x + z
+  } else if (y === '-'){
+    return x - z
+  } else if (y === '*'){
+    return x * z
+  } else  if (y === '/'){  
+    return x / z
 }   
 }
 
-CALCULATOR(3, '/', 3);
+console.log(CALCULATOR(3, '*', 3));
 
 // 5. Write a function that takes an array of strings and a string and returns true or false if the string is in the array.
 const word = ['hi', 'to', 'by', 'it'];
 console.log(word.includes('is'));
 // 6. "write a function that takes a person object {firstname: 'joe', lastname: 'shmoe', age: 50} and returns a formatted string "joe shmoe is 50 years old
+const mike = {firstname: 'joe', lastname: 'shmoe', age: 50}
 
+const hwString = (x) =>{
+  return `${x.firstname} ${x.lastname} is ${x.age} years old`
+}
+console.log(hwString(mike))
 // 7. write a function that takes an array that removes the first and last items and return that new array
 let array =[1,2,3,4]
 const swap = (array)=>{
@@ -110,6 +115,10 @@ console.log('array after swap:', array)
 // 8. write a function that swaps the last and first items of an array 
 // 9. write a function that takes a array and a second argument and returns the index in the array of the second argument
 // 10. write a function that takes a number and uses a ternary to return if the number is odd or even.
+const test = (x)=>{
+  return x % 2 === 0 ? 'even' : 'odd'
+}
+console.log(test(53))
 // 11. Write a function that prints all  numbers from 0 – 10
 
 //hw2
